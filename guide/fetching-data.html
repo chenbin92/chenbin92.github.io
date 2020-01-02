@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>数据请求 | Nice.js</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/assets/css/0.styles.734edb6f.css" as="style"><link rel="preload" href="/assets/js/app.897583a1.js" as="script"><link rel="preload" href="/assets/js/2.b07d02f4.js" as="script"><link rel="preload" href="/assets/js/11.aeb068c8.js" as="script"><link rel="prefetch" href="/assets/js/10.e519266b.js"><link rel="prefetch" href="/assets/js/12.09989533.js"><link rel="prefetch" href="/assets/js/13.2280e1c5.js"><link rel="prefetch" href="/assets/js/14.2dbc7481.js"><link rel="prefetch" href="/assets/js/15.c5d12023.js"><link rel="prefetch" href="/assets/js/16.fe4acadf.js"><link rel="prefetch" href="/assets/js/17.7e82454b.js"><link rel="prefetch" href="/assets/js/18.883e3063.js"><link rel="prefetch" href="/assets/js/19.536c2729.js"><link rel="prefetch" href="/assets/js/20.8b0034be.js"><link rel="prefetch" href="/assets/js/21.29ce6735.js"><link rel="prefetch" href="/assets/js/3.437ac4bb.js"><link rel="prefetch" href="/assets/js/4.9b7554e1.js"><link rel="prefetch" href="/assets/js/5.27a12ba8.js"><link rel="prefetch" href="/assets/js/6.6578a5ff.js"><link rel="prefetch" href="/assets/js/7.c90c60d2.js"><link rel="prefetch" href="/assets/js/8.8618899d.js"><link rel="prefetch" href="/assets/js/9.2b6c6d78.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.734edb6f.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><!----> <span class="site-name">Nice.js</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/guide/intro.html" class="nav-link">文档</a></div><div class="nav-item"><a href="/spec/" class="nav-link">规范</a></div><div class="nav-item"><a href="/api/" class="nav-link">API</a></div> <a href="https://github.com/alibaba/ice" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/" class="nav-link">首页</a></div><div class="nav-item"><a href="/guide/intro.html" class="nav-link">文档</a></div><div class="nav-item"><a href="/spec/" class="nav-link">规范</a></div><div class="nav-item"><a href="/api/" class="nav-link">API</a></div> <a href="https://github.com/alibaba/ice" target="_blank" rel="noopener noreferrer" class="repo-link">
+    GitHub
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>新手指南</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/intro.html" class="sidebar-link">Nice.js 是什么</a></li><li><a href="/guide/quickstart.html" class="sidebar-link">快速开始</a></li><li><a href="/guide/faq.html" class="sidebar-link">常见问题</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>基础教程</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/guide/structure.html" class="sidebar-link">目录结构</a></li><li><a href="/guide/assets.html" class="sidebar-link">静态资源</a></li><li><a href="/guide/stylesheet.html" class="sidebar-link">样式方案</a></li><li><a href="/guide/views.html" class="sidebar-link">视图</a></li><li><a href="/guide/router.html" class="sidebar-link">路由</a></li><li><a href="/guide/fetching-data.html" class="active sidebar-link">数据请求</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/fetching-data.html#fetch-方法" class="sidebar-link">fetch 方法</a></li><li class="sidebar-sub-header"><a href="/guide/fetching-data.html#数据请求约定" class="sidebar-link">数据请求约定</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/guide/fetching-data.html#请求接口定义" class="sidebar-link">请求接口定义</a></li><li class="sidebar-sub-header"><a href="/guide/fetching-data.html#在模型中调用接口服务" class="sidebar-link">在模型中调用接口服务</a></li><li class="sidebar-sub-header"><a href="/guide/fetching-data.html#在视图中请求数据" class="sidebar-link">在视图中请求数据</a></li><li class="sidebar-sub-header"><a href="/guide/fetching-data.html#自定义-fetch-配置" class="sidebar-link">自定义 fetch 配置</a></li></ul></li></ul></li><li><a href="/guide/state-management.html" class="sidebar-link">状态管理</a></li><li><a href="/guide/config.html" class="sidebar-link">配置</a></li><li><a href="/guide/modules.html" class="sidebar-link">模块化</a></li><li><a href="/guide/deploy.html" class="sidebar-link">部署</a></li></ul></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>高级指引</span> <span class="arrow right"></span></p> <!----></section></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>周边生态</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="数据请求"><a href="#数据请求" class="header-anchor">#</a> 数据请求</h1> <p>大多数前端应用都需要通过 HTTP 协议与后端服务器通讯。框架内置提供了 fetch 功能，它基于社区主流的 useSWR 和 axios 进行封装，提供了数据请求功能。</p> <h2 id="fetch-方法"><a href="#fetch-方法" class="header-anchor">#</a> fetch 方法</h2> <p>fetch 方法用于数据请求，默认挂载在 app 示例对象下，使用方式如下：</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token keyword">export</span> <span class="token function-variable function">default</span> <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token parameter">app</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> fetch<span class="token punctuation">,</span> logger <span class="token punctuation">}</span> <span class="token operator">=</span> app
+
+  <span class="token function">fetch</span><span class="token punctuation">(</span><span class="token punctuation">{</span>
+    url<span class="token punctuation">:</span> <span class="token string">'/api/getUserInfo'</span><span class="token punctuation">,</span>
+    method<span class="token punctuation">:</span> <span class="token string">'GET'</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">then</span><span class="token punctuation">(</span><span class="token parameter">res</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    logger<span class="token punctuation">.</span><span class="token function">success</span><span class="token punctuation">(</span>res<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">catch</span><span class="token punctuation">(</span><span class="token parameter">err</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    logger<span class="token punctuation">.</span><span class="token function">error</span><span class="token punctuation">(</span>err<span class="token punctuation">)</span>
+  <span class="token punctuation">}</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="数据请求约定"><a href="#数据请求约定" class="header-anchor">#</a> 数据请求约定</h2> <p>框架约定了数据请求的方式，以及<strong>全局请求</strong>和<strong>页面请求</strong>的接口定义，目录组织如下：</p> <div class="language-md extra-class"><pre class="language-md"><code>├── src/
+│   ├── pages/ 
+│   │   └── Home/                  # 页面单元
+│   │       ├── index.tsx          # 入口
+│   │       ├── service.ts         # 服务
+│   │       ├── store.ts           # 模型
+│   │       └── index.module.scss 
+│   ├── service/                   # 全局服务接口        
+│   │   ├── serviceA.js          
+│   │   └── serviceB.js
+│   ├── store/                     # 全局模型定义
+│   │   ├── storeA.js          
+│   │   └── storeB.js
+</code></pre></div><h3 id="请求接口定义"><a href="#请求接口定义" class="header-anchor">#</a> 请求接口定义</h3> <p>接口定义规范如下，默认需要导出一个函数，该函数接收全局的 App 实例。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// pageA/service.js</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">(</span><span class="token parameter">app</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token comment">// 从 app 实例上获取 fetch 方法</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> fetch <span class="token punctuation">}</span> <span class="token operator">=</span> app<span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token function">getUserInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token keyword">return</span> app<span class="token punctuation">.</span><span class="token function">fetch</span><span class="token punctuation">(</span><span class="token string">'/api/userInfo'</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="在模型中调用接口服务"><a href="#在模型中调用接口服务" class="header-anchor">#</a> 在模型中调用接口服务</h3> <p>通常数据请求的调用大多数应该在模型中进行调用，这是我们推荐的最佳方式，有非常有利于代码风格的一致性。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// pageA/store.js</span>
+
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">(</span><span class="token parameter">app</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> service <span class="token punctuation">}</span> <span class="token operator">=</span> app<span class="token punctuation">;</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 数据对象</span>
+    data<span class="token punctuation">:</span> <span class="token punctuation">{</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+
+    <span class="token keyword">async</span> <span class="token function">getUserInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+      <span class="token comment">// 调用服务接口</span>
+      <span class="token keyword">this</span><span class="token punctuation">.</span>data <span class="token operator">=</span> <span class="token keyword">await</span> service<span class="token punctuation">.</span><span class="token function">getUserInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="在视图中请求数据"><a href="#在视图中请求数据" class="header-anchor">#</a> 在视图中请求数据</h3> <p>最后，我们在视图中可以通过 useApp 访问到 store 中定义的方法体，然后发送请求。</p> <div class="language-js extra-class"><pre class="language-js"><code><span class="token comment">// pageA/index.jsx</span>
+<span class="token keyword">export</span> <span class="token keyword">default</span> <span class="token punctuation">(</span><span class="token parameter">app</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> <span class="token punctuation">{</span> app <span class="token punctuation">}</span> <span class="token operator">=</span> <span class="token function">useApp</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+
+  React<span class="token punctuation">.</span><span class="token function">useEffect</span><span class="token punctuation">(</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+    <span class="token comment">// 通过 pageA.store 访问</span>
+    <span class="token keyword">await</span> app<span class="token punctuation">.</span>pageA<span class="token punctuation">.</span>store<span class="token punctuation">.</span><span class="token function">getUserInfo</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span> <span class="token punctuation">[</span><span class="token punctuation">]</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h3 id="自定义-fetch-配置"><a href="#自定义-fetch-配置" class="header-anchor">#</a> 自定义 fetch 配置</h3> <p><a href="/api/fetch.html">详见 fetch API</a></p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/guide/router.html" class="prev">路由</a></span> <span class="next"><a href="/guide/state-management.html">状态管理</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.897583a1.js" defer></script><script src="/assets/js/2.b07d02f4.js" defer></script><script src="/assets/js/11.aeb068c8.js" defer></script>
+  </body>
+</html>
